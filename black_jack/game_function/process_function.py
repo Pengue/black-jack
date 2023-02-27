@@ -11,7 +11,7 @@ RULES = ("Hey, cowboy! Welcome to the hottest bar in the entire wild west."
 
 def check_correct_bet(bet, balance):
     if bet == 'quit':
-        return False 
+        return False
     try:
         if int(bet) > 0 and int(bet) <= balance:
             return True
@@ -25,16 +25,16 @@ def check_correct_bet(bet, balance):
 
 def determining_bet(bet, balance):
     if bet == 'more':
-        bet = input(
-                    f'Nice to meet you. Your balance is still {balance} coins.'
+        bet = input(f'Nice to meet you. Your balance is still {balance} coins.'
                     '\nHow much do you bet? (1-{balance}, or quit)\n:')
-    while check_correct_bet(bet, balance) != True and check_correct_bet(bet,balance) != False:
-        if check_correct_bet(bet, balance) == None:
+    while (check_correct_bet(bet, balance)
+            is not True and check_correct_bet(bet, balance) is not False):
+        if check_correct_bet(bet, balance) is None:
             print('Hey! We are serious gamers! Get the f@ck out of here!')
             return 'Small bet'
         print(check_correct_bet(bet, balance))
         bet = input(f'How much do you bet? (1-{balance}, or quit)\n:')
-    if check_correct_bet(bet, balance) == False:
+    if check_correct_bet(bet, balance) is False:
         return 'quit'
     print('Your bet is ' + bet)
     bet = int(bet)
@@ -48,10 +48,12 @@ def determine_winner(curent_player_value, curent_diller_value, balance, bet):
         return balance
     elif curent_player_value > curent_diller_value:
         balance += int(bet)
-        print(f'Congratulations, you are lucky son of a beach\nYour current balance is {balance}')
+        print('Congratulations, you are lucky son of a beach'
+              f'\nYour current balance is {balance}')
         return balance
     elif curent_diller_value == curent_player_value:
-        print('He-he, it is not the worst option. You are always able to try again')
+        print('He-he, it is not the worst option.'
+              ' You are always able to try again')
         print(f'\nYour balance now is {balance} coins')
         return balance
     else:
@@ -61,7 +63,7 @@ def determine_winner(curent_player_value, curent_diller_value, balance, bet):
         return balance
 
 
-def answer_to_play_again(balance): 
+def answer_to_play_again(balance):
     choise = input('Your decision: (more, leave)\n:')
     while choise != 'leave' and choise != 'more':
         print("This is incorrect answer, don't try to crash my game.")
@@ -70,5 +72,6 @@ def answer_to_play_again(balance):
         print('Better luck next time!\nGoodbye!')
         return 'quit', 'quit'
     elif choise == 'more':
-        bet = input(f'Your balance is {balance} coins now.\nHow much do you bet? (1-{balance}, or quit)\n:')
+        bet = input(f'Your balance is {balance} coins now.'
+                    f'\nHow much do you bet? (1-{balance}, or quit)\n:')
         return 'more', bet
