@@ -1,12 +1,17 @@
 RULES = ("Hey, cowboy! Welcome to the hottest bar in the entire wild west."
-        "\nThis is your chance to play Black Jack with America's most notorious crooks and outlaws!"
-        "\nThe stakes are high, but the winnings will make you very happy. Do not miss the chance and be a sweetheart."
-        "\nHere's all you need to know: there's only one deck of 36 cards." 
-        "\nThe dealer will put himself 2 cards and give you 2. Your job is to score more points than this cheater."
-        "\nTake more cards or stop at your own discretion, but remember and be careful, "
-        "because if you outscore 21 points -\nweep for your wife's new shoes, someone at the bar will "
-        "surely blow a hole in you.\nTry to give it your all and good luck "
-        "(if you get 100 000 - you'll get a pleasant surprise")
+         "\nThis is your chance to play Black Jack"
+         " with America's most notorious crooks and outlaws!"
+         "\nThe stakes are high, but the winnings will make you very happy."
+         " Do not miss the chance and be a sweetheart."
+         "\nHere's all you need to know: there's only one deck of 36 cards."
+         "\nThe dealer will put himself 2 cards and give you 2. "
+         "Your job is to score more points than this cheater."
+         "\nTake more cards or stop at your own discretion, "
+         "but remember and be careful, "
+         "because if you outscore 21 points -"
+         "\nweep for your wife's new shoes, someone at the bar will "
+         "surely blow a hole in you.\nTry to give it your all and good luck "
+         "(if you get 100 000 - you'll get a pleasant surprise")
 
 
 def check_correct_bet(bet, balance):
