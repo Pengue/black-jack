@@ -34,9 +34,10 @@ def run_game():
                                    + int(cards_value[numbers.index(pl_num2)])
                                    + int(cards_value[numbers.index(pl_num3)]))
             print('Player: ' + str(curent_player_value))
-            make_cards.print_player_three_cards(pl_num1, pl_simb1,
-                                                pl_num2, pl_simb2,
-                                                pl_num3, pl_simb3)
+            print(f' ___   ___   ___\n|{str(pl_num1)}'
+                  f'  | |{str(pl_num2)}  | |{str(pl_num3)}  |\n| {pl_simb1}'
+                  f' | | {pl_simb2} | | {pl_simb3} |\n|  {str(pl_num1)}'
+                  f'| |  {str(pl_num2)}| |  {str(pl_num3)}|')
             choise = input('Your decision: (stop, leave)\n:')
         if choise == 'stop':
             print('Diller: ' + str(curent_diller_value))
