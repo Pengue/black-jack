@@ -45,11 +45,3 @@ def make_player_third_card():
     player_num3 = random.choice(numbers)
     player_simb3 = random.choice(simbols)
     return player_num3, player_simb3
-
-
-def print_player_three_cards(pl_num1, pl_simb1, pl_num2,
-                             pl_simb2, pl_num3, pl_simb3):
-    print(f' ___   ___   ___\n|{str(pl_num1)}'
-          f'  | |{str(pl_num2)}  | |{str(pl_num3)}  |\n| {pl_simb1}'
-          f' | | {pl_simb2} | | {pl_simb3} |\n|  {str(pl_num1)}'
-          f'| |  {str(pl_num2)}| |  {str(pl_num3)}|')
