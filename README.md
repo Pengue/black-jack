@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/26cbe53cff2aa1026fef/maintainability)](https://codeclimate.com/github/Pengue/python-project-49)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d16e50d047b45fb639f2/maintainability)](https://codeclimate.com/github/Pengue/black-jack/maintainability)
 
 # BlackJack classic game for fun
 
