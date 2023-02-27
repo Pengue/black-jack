@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-import brain_games.cli
+from black_jack import game_engine
 
 
 def main():
-    brain_games.cli.welcome_user()
+    game_engine.run_game()
 
 
 if __name__ == '__main__':
