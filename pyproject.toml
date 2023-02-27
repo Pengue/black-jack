@@ -1,10 +1,10 @@
 [tool.poetry]
 name = "black-jack"
-version = "0.1.1"
+version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-packages = [{include = "black-jack"}]
+packages = [{include = "black_jack"}]
 
 
 [tool.poetry.dependencies]
